@@ -14,7 +14,7 @@ class KeySettings(val objectManager: ObjectManager) { // TODO: finish implementa
     var scrawl = 0f
 
     init {
-        var variables = Key::class.declaredMemberProperties.toMutableList()
+        val variables = Key::class.declaredMemberProperties.toMutableList()
         variables.removeAt(0)
         for (i in variables.indices) {
             buttons.add(
